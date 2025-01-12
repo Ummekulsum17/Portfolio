@@ -1,0 +1,175 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #0049a8;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo h1 {
+  font-size: 1.8em;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.skill-item {
+  background-color: #0049a8;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 25px;
+}
+
+.projects-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.project-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.project-info h3 {
+  margin-top: 10px;
+  font-size: 1.2em;
+}
+
+.project-info a {
+  text-decoration: none;
+  color: #00a2ff;
+  font-weight: bold;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form input,
+form textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 1em;
+}
+
+form button {
+  background-color: #0049a8;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+form button:hover {
+  background-color: #000000;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #0049a8;
+  color: #fff;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+.fa-instagram,.fa-linkedin,.fa-github,.fa-envelope{
+  font-size: 40px;
+  margin-left: 15px;
+}
+.fa-instagram{
+  color: rgb(186, 0, 211);
+}
+.fa-linkedin{
+  color: blue;
+}
+.fa-github{
+  color: #000000;
+}
+.fa-envelope{
+  color:rgb(0, 140, 255);
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+  .projects-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .skill-list {
+      flex-direction: column;
+      align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  nav ul {
+      flex-direction: column;
+      gap: 10px;
+  }
+}
